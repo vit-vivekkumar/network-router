@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login V20</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<style>
+    h5{
+        color: blue;
+    }
+    .btn{
+
+        border: 0.2px solid;
+        padding: 5px 15px;
+        margin-right: 40px;
+        background: lightgray;
+    }
+
+    .btn:hover{
+        background: blue;
+        color: white;
+    }
+    .setting{
+        
+        float: right;
+
+
+    }
+    .setting a{
+        color: blue;
+    padding-left: 500px;
+    text-decoration: underline;
+    }
+</style>
+<body>
+<div class="">
+<div class="header">Router Configurations Setting</div>
+ <div class="container">
+    
+        <div class="form-wrapper">
+            <form action="">
+                <h5>Network Config Setup:</h5>
+                <div class="form-item">
+                    <label for="fullname">Student Name:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="form-item">
+                    <label for="username">Father's Name:</label>
+                    <input type="text" name="username" id="fathersname" placeholder="Father's Full Name" required>
+                </div>
+                <div class="form-item">
+                    <label for="username">Mother's Name:</label>
+                    <input type="text" name="username" id="mothersname" placeholder="Mother's Full Name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="gender">Gender:</label>
+                    <div class="genders">
+                        <p>Male</p> <input type="radio" name="gender" id="gender" value="male" required>
+                        <p>Female</p> <input type="radio" name="gender" id="gender" value="female">
+                        <p>Other</p> <input type="radio" name="gender" id="gender" value="other">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="email">Date of Birth</label>
+                    <input type="date" name="DOB" id="DOB" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="email@xyz.com" required>
+                </div>
+                <div class="form-item">
+                    <label for="level">Level:</label>
+                    <select name="level" id="level">
+                        <option value="highschool">High School</option>
+                        <option value="highschool">Bachelors </option>
+                        <option value="highschool">Masters</option>
+                        <option value="highschool">Phd</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="department">Department:</label>
+                    <select name="department" id="department">
+                        <option value="electrical">Electrical Engineering</option>
+                        <option value="electrical">Computer Engineering</option>
+                        <option value="electrical">Software Engineering</option>
+                        <option value="electrical">Civil Engineering</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="phonenumber">Tel/Mobile:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+               <div class="form-item setting "><a  href="index.html">Advance Setting</a></div> <br>
+            <hr>
+        <h5>Wireless Security Setup:</h5>
+             <div class="form-item">
+                    <label for="fullname">Security Key:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                </div>
+                  <div class="form-item">
+                    <small>Default: 2324234324</small>
+                </div>
+                <br>
+<div class="wrapper">
+                <button class="btn" type="submit">Save</button>
+                 <button class="btn" type="submit">Cancel</button>
+</div>
+            </form>
+        </div>
+
+
+
+</div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+
+
+<script src="js/main.js"></script>
+
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');
+      
+      const passwordInput = document.querySelector("#password")
+      const eye = document.querySelector("#eye")
+      eye.addEventListener("click", function(){
+      this.classList.toggle("fa-eye-slash")
+      const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
+      passwordInput.setAttribute("type", type)
+    })
+
+    </script>
+</body>
+</html>
